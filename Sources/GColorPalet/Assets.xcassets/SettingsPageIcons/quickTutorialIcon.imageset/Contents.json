@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "QucikTutorialIcon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
