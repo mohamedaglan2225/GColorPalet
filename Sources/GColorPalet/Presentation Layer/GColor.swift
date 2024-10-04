@@ -32,6 +32,25 @@ public class GColor {
     public var baseTabBar: UIColor              { return baseView.check(by: 3) }
     public var baseTabBarText: UIColor          { return baseButton.lighter(by: 8) }
     
+    // Subscription
+    private var subsubscriptionTheme: UIColor                { return UIColor(rgb: 0x202020) }
+    
+    public var subscriptionNavbar: UIColor                   { return subsubscriptionTheme }
+    public var subscriptionNavbarText: UIColor               { return subsubscriptionTheme.textColor() }
+    
+    public var subscriptionTitle: UIColor                    { return subsubscriptionTheme.textColor() }
+    public var subscriptionBackground: UIColor               { return subsubscriptionTheme }
+    public var subscriptionBackgroundImage: UIImage?         { return #imageLiteral(resourceName: "Background").maskWithColor(color: subsubscriptionTheme.check(by: 2)) }
+    
+    public var subscriptionFeatureText: UIColor              { return subsubscriptionTheme.textColor(by: 40) }
+    public var subscriptionFeatureIcon: UIColor              { return subsubscriptionTheme.textColor(by: 40) }
+    
+    public var subscriptionSubButtonText: UIColor            { return subsubscriptionTheme.textColor(by: 30) }
+    public var subscriptionSubButtonBackground: UIColor      { return subscriptionSubButtonText.alpha(0.15) }
+    
+    public var subscriptionRestoreButtonText: UIColor        { return subsubscriptionTheme.textColor(by: 60) }
+    public var subscriptionRestoreButtonBackground: UIColor  { return subscriptionRestoreButtonText.alpha(0.15) }
+    
     // Exposed Color Properties
     public var navBar: UIColor { return baseThame }
     public var navBarText: UIColor { return baseThameText }
